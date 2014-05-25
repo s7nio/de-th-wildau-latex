@@ -23,7 +23,8 @@ Please make a pull request of your improvements and share your knowledge.
 
 ## Tools
 
-You can write generally your .tex file in a simple text editor e.g. Notepad.
+You can write generally your .tex file in a simple text editor.
+
 Useful free/open source tools are listed below:
 
 - Editor
@@ -40,7 +41,7 @@ Useful free/open source tools are listed below:
 - For bibliography
 	- [BibDesk](http://bibdesk.sourceforge.net/) Mac
 	- [JabRef](http://jabref.sourceforge.net/) java based
-	- [citeulike](http://www.citeulike.org/) web based (free)
+	- [citeulike](http://www.citeulike.org/) web based
 
 My favorite tools are MacTeX, texmaker, BibDesk, LaTeXiT.
 
