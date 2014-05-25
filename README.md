@@ -13,7 +13,7 @@ You have an styling request or no idea to integrat things? Do not be frustrated.
 
 Please make a pull request of your improvements and share your knowledge.
 
-## Latex distributions / bundles
+## Distributions
 
 - Windows: [MiKTeX](http://miktex.org/)
 - Mac OS X: [MacTeX](https://www.tug.org/mactex/)
