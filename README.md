@@ -18,8 +18,8 @@ Please make a pull request of your improvements and share your knowledge.
 - Windows: [MiKTeX](http://miktex.org/)
 - Mac OS X: [MacTeX](https://www.tug.org/mactex/)
 - Linux
-	- Debian, Ubuntu: apt-get install texlive-full
-	- RedHat, CentOS: yum install tetex
+	- Debian, Ubuntu: *apt-get install texlive-full*
+	- RedHat, CentOS: *yum install tetex*
 
 ## Tools
 
