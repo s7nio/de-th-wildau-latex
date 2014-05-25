@@ -1,8 +1,9 @@
 % created by Sebastian Nemak - der-basti.com
 \documentclass[
 	12pt % default font size
-	,a4paper % paper size - see package geometry
-]{scrreprt} % KOMA-Script report document typ
+	,headings=normal % smarter headings
+]{scrreprt} % onesided & A4 paper (geometry package options)
+% KOMA-Script report document typ
 
 % -----------------------------------------------------------------------------
 % packages, settings, \renewcommand and meta data
@@ -11,7 +12,15 @@
 \usepackage[utf8]{inputenc} % set utf-8 input encoding
 \usepackage[ngerman,english]{babel} % to use (new) german and english language
 \usepackage{lmodern} % use vector font
+\usepackage[top=27mm, left=35mm, right=20mm, bottom=30mm, headsep=10mm, footskip=12mm]{geometry} % onesided with binding
+\usepackage{blindtext} % for demo text purposes
+
+\title{Latex Template}
+\author{Your Name}
+\date{\today}
 
 \begin{document}
-	\Huge TH-Wildau Latex Template
+	\maketitle
+	
+	\blinddocument
 \end{document}
