@@ -1,9 +1,10 @@
 % created by Sebastian Nemak - der-basti.com
 \documentclass[
 	12pt % default font size
+	,a4paper % classic A4 page, default onesided (see geometry package options)
 	,headings=normal % smarter headings
-]{scrreprt} % onesided & A4 paper (geometry package options)
-% KOMA-Script report document typ
+	,toc=graduated % table of content with indent
+]{scrreprt} % KOMA-Script report document typ
 
 % -----------------------------------------------------------------------------
 % packages, settings, \renewcommand and meta data
@@ -13,14 +14,100 @@
 \usepackage[ngerman,english]{babel} % to use (new) german and english language
 \usepackage{lmodern} % use vector font
 \usepackage[top=27mm, left=35mm, right=20mm, bottom=30mm, headsep=10mm, footskip=12mm]{geometry} % onesided with binding
-\usepackage{blindtext} % for demo text purposes
+\usepackage{hyperref} % han­dle cross-ref­er­enc­ing
+\usepackage{amsmath,amsfonts,amssymb} % pro­vides math­e­mat­i­cal fea­tures
+\usepackage{setspace} % set­ting the spac­ing be­tween lines
 
-\title{Latex Template}
+\usepackage{blindtext} % OPTINAL: for demo text purposes
+
+\hypersetup{ % pdf options
+	pdfauthor = {Your Name}
+	,pdftitle = {Latex Template}
+	,pdfsubject = {bachelor or master thesis subject}
+	,pdfcreator={\LaTeX}
+	,pdfkeywords = {Stichwort1, Stichwort2 ...}
+	,pdfproducer = {pdfTeX \the\pdftexversion.\pdftexrevision}
+	,unicode=false, pdftoolbar=true, pdfmenubar=true, pdffitwindow=false, pdfstartview={FitH},pdfnewwindow=true
+	,colorlinks=true, linkcolor=black, citecolor=black, filecolor=magenta, urlcolor=black
+}
+\setcounter{tocdepth}{3} % toc depth level - list subsubsection
+\setcounter{secnumdepth}{3} % toc depth level - number subsubsection
+
 \author{Your Name}
+\title{Latex Template}
+\subtitle{bachelor or master thesis subject}
 \date{\today}
 
 \begin{document}
-	\maketitle
-	
-	\blinddocument
+
+% Vorspann
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\theHsection}{\Roman{section}}
+\pagenumbering{Roman}
+
+\selectlanguage{ngerman}
+
+% -----------------------------------------------------------------------------
+% title page
+% -----------------------------------------------------------------------------
+
+\maketitle
+
+% -----------------------------------------------------------------------------
+% abstract
+% -----------------------------------------------------------------------------
+
+\section*{Zusammenfassung} % use section to print de and en on one page
+\addcontentsline{toc}{chapter}{Zusammenfassung}
+	\blindtext
+
+\section*{Abstract}
+\selectlanguage{english}
+	\blindtext
+\selectlanguage{ngerman}
+
+\newpage
+
+% -----------------------------------------------------------------------------
+% acknowledgments
+% -----------------------------------------------------------------------------
+
+\section*{Danksagung}
+
+Für die Unterstützung ...
+
+% -----------------------------------------------------------------------------
+% table of ...
+% -----------------------------------------------------------------------------
+
+\tableofcontents
+
+\newpage
+\onehalfspacing % for the rest document
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\theHsection}{\arabic{section}}
+\pagenumbering{arabic}
+\setcounter{section}{0}
+\setcounter{page}{1}
+
+% -----------------------------------------------------------------------------
+% your content
+% -----------------------------------------------------------------------------
+
+\blinddocument
+
+\blindmathpaper
+
+% -----------------------------------------------------------------------------
+% appendix
+% -----------------------------------------------------------------------------
+
+\appendix
+\chapter{Appendix}
+\pagenumbering{Roman}
+\setcounter{page}{1}
+
+\section*{This section appendix are not listed in the toc}
+\section{Your appendix}
+
 \end{document}
