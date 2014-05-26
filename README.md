@@ -5,7 +5,8 @@ tldr: KOMA script based latex template for bachelor- and master-thesis (TH Wilda
 This repository contains a latex template for bachelor- and master-thesis at Technical University of Applied Sciences Wildau (Technische Hochschule Wildau, TH Wildau). **NOT OFFICIAL.** ... [because it doesn't exist](http://www.th-wildau.de/im-studium/fachbereiche/wir/wir-dokumente.html)
 
 ## Files
-- [thesis.template.tex](thesis.template.tex) main file
+- [thesis.template.tex](thesis.template.tex) main file (to compile)
+- [thesis.content.sample.tex](thesis.content.sample.tex) contains the main content
 - [thesis.template.pdf](https://github.com/der-basti/de.th.wildau.latex/raw/master/thesis.template.pdf) document preview
 
 ## Issues
