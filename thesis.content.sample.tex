@@ -32,13 +32,28 @@ Fußnote \footnote{Text in der Fußnote}.\par
 Eine klassische URL \url{https://google.com}. % url syntax is a little bit different between package hyperref and url
 Natürlich kann eine URL auch so aussehen \href{https://google.com}{Google}.\par
 
-Nicht verwendete \ac{Abk.}en werden auch nicht im Verzeichnis aufgenommen. Der Text kann auch \ac{Abk.} enthalten. Folgende Variationen sind möglich.\linebreak
-ac: \ac{EU}\\
-acs: \acs{EU}\\
-acf: \acf{EU}\\
-acl: \acl{EU}\\ \par
+Nicht verwendete \ac{Abk.}en werden auch nicht im Verzeichnis aufgenommen. Der Text kann auch \ac{Abk.} enthalten. Folgende Variationen sind möglich.\par
+ac: \ac{EU}\par
+acs: \acs{EU}\par
+acf: \acf{EU}\par
+acl: \acl{EU}\par
 
-Cite: %TODO \cite[S. 12ff.]{buch}
+\subsubsection{Zitation}\label{sssec:citation}
+
+Ein Buch \cite{b:buch}\par
+Ein Buch mit Seitenabgabe \cite[S. 3ff.]{b:latex}\par
+Ein Buch mit mehreren Authoren \cite{b:komascript}\par
+Eine Webreferenz \cite{w:website}\par
+Eine längere Zitation.\par
+\begin{quote}
+	The major improvement concerns the structure of the interview
+	(Ulrich~\& Trumbo~1965, p.~112) \ldots \par
+	\blindtext
+\end{quote}
+
+\begin{verbatim}
+	The \BibTeX\ and \LaTeX\ \ldots
+\end{verbatim}
 
 \subsection{Ausrichtung}\label{ssec:ausrichtung}
 
@@ -96,9 +111,22 @@ right
 • Huge
 \end{Huge}
 
-\subsection{Quellcode}\label{quellcode}
+\section{Tabellen}\label{sec:tabellen}
 
-%TODO
+\begin{table}[ht]
+	\centering
+	\label{tab:matrix}
+	\begin{tabular}{ | l | c | r | p{5cm} | }
+		\hline
+		\textbf{Left (l)} & \textbf{Center (c)} & \textbf{Right (r)} & \textbf{p 5cm breit}\\
+		\hline
+		1 & 2 & 3 & 4\\
+		\hline
+		5 & 6 & 7 & 8\\
+		\hline
+	\end{tabular}
+	\captionbelow{Matrix Beschriftung}
+\end{table}
 
 \section{Grafiken}\label{sec:grafiken}
 
@@ -120,19 +148,6 @@ Das folgende Grafik ist herunter skaliert, da sie für die A4 Seite zu breit ist
 	\label{fig:googleThWildau}
 \end{figure}
 
-\section{Tabellen}\label{sec:tabellen}
+\subsection{Quellcode}\label{quellcode}
 
-\begin{table}[ht]
-	\centering
-	\label{tab:matrix}
-	\begin{tabular}{ | l | c | r | p{5cm} | }
-		\hline
-		\textbf{Left (l)} & \textbf{Center (c)} & \textbf{Right (r)} & \textbf{p 5cm breit}\\
-		\hline
-		1 & 2 & 3 & 4\\
-		\hline
-		5 & 6 & 7 & 8\\
-		\hline
-	\end{tabular}
-	\captionbelow{Matrix Beschriftung}
-\end{table}
+%TODO

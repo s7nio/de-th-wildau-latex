@@ -3,7 +3,8 @@
 	12pt % default font size
 	,a4paper % classic A4 page, default onesided (see geometry package options)
 	,headings=normal % smarter headings
-	,toc=graduated % table of content with indent (not '=flat')
+	,toc=graduated % table of content (toc) with indent (not '=flat')
+	,bibliography=totoc % toc bibliography
 ]{scrreprt} % KOMA-Script report document typ
 
 % -----------------------------------------------------------------------------
@@ -21,6 +22,7 @@
 \usepackage[german=swiss]{csquotes} % pro­vides ad­vanced fa­cil­i­ties for in­line and dis­play quo­ta­tions e.g. \enquote{Text}
 \usepackage{graphicx} % grafic
 \usepackage[printonlyused]{acronym} % import package and print only used acronyms
+\usepackage{harvard} % http://www.ctan.org/tex-archive/macros/latex/contrib/harvard
 
 \usepackage{blindtext} % OPTINAL: for demo text purposes
 
@@ -89,13 +91,13 @@ Für die Unterstützung ...\par
 
 \pagebreak
 
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 \listoffigures
 
 \pagebreak
 
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
 \listoftables
-
-\pagebreak
 
 \pagebreak
 
@@ -123,7 +125,20 @@ Für die Unterstützung ...\par
 % your content
 % -----------------------------------------------------------------------------
 
-\input{thesis.content.sample} % ist here ./thesis.content.sample.tex
+\input{thesis.content.sample} % located here ./thesis.content.sample.tex
+
+\clearpage
+\pagebreak
+\newpage
+
+% -----------------------------------------------------------------------------
+% bibliography
+% -----------------------------------------------------------------------------
+
+\renewcommand\refname{Quellenverzeichnis}
+\bibliographystyle{agsm}
+\bibliography{bibo}
+\pagebreak
 
 % -----------------------------------------------------------------------------
 % appendix
