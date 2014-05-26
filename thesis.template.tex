@@ -24,7 +24,9 @@
 \usepackage{graphicx} % grafic
 \usepackage[printonlyused]{acronym} % import package and print only used acronyms
 \usepackage{harvard} % har­vard ci­ta­tion style with sev­eral vari­ant styles
-\usepackage[automark,headsepline]{scrlayer-scrpage} %TOD
+\usepackage[automark,headsepline]{scrlayer-scrpage} % for header and footer
+\usepackage{scrhack,listings} % package for source code listings %TODO ,filecontents for line numbers
+	\usepackage[usenames,dvipsnames]{color} % for syntax highlighting
 
 \usepackage{blindtext} % OPTINAL: for demo text purposes
 
@@ -44,9 +46,20 @@
 \graphicspath{ {images/}{screenshots/} } % grafic - set basic directories
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg,.gif,.tif,.tiff} % grafic - default file extensions
 % header and footer settings
-\clearpairofpagestyles
-\cfoot[\pagemark]{\pagemark}
-\pagestyle{scrheadings}
+	\clearpairofpagestyles
+	\cfoot[\pagemark]{\pagemark}
+	\pagestyle{scrheadings}
+% color source code listings
+\lstset{ %TODO language=Java,
+	breaklines=true
+	,captionpos=b
+	,numbers=left
+	,basicstyle=\ttfamily\scriptsize
+	,keywordstyle=\color{blue}\ttfamily
+	,stringstyle=\color{red}\ttfamily
+	,commentstyle=\color{ForestGreen}\ttfamily
+	,morecomment=[l][\color{magenta}]{\#}
+}
 
 \author{Your Name}
 \title{Latex Template}
@@ -56,6 +69,7 @@
 \begin{document}
 
 \selectlanguage{ngerman}
+
 % Vorspann
 \renewcommand{\thesection}{\Roman{section}} \renewcommand{\theHsection}{\Roman{section}}
 \pagenumbering{Roman}
@@ -171,10 +185,8 @@ Für die Unterstützung ...\par
 % bibliography
 % -----------------------------------------------------------------------------
 
-\renewcommand\refname{Quellenverzeichnis}
 \bibliographystyle{agsm}
 \bibliography{bibo}
-\pagebreak
 
 % -----------------------------------------------------------------------------
 % appendix
