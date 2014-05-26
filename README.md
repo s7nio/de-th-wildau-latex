@@ -2,7 +2,7 @@
 
 tldr: KOMA script based latex template for bachelor- and master-thesis (TH Wildau).
 
-This repository contains a latex template for bachelor- and master-thesis at Technical University of Applied Sciences Wildau (Technische Hochschule Wildau, TH Wildau). **NOT OFFICIAL.** ... because it doesn't exist
+This repository contains a latex template for bachelor- and master-thesis at Technical University of Applied Sciences Wildau (Technische Hochschule Wildau, TH Wildau). **NOT OFFICIAL.** ... [because it doesn't exist](http://www.th-wildau.de/im-studium/fachbereiche/wir/wir-dokumente.html)
 
 ## Files
 - [thesis.template.tex](thesis.template.tex) main file
@@ -23,7 +23,8 @@ Please make a pull request of your improvements and share your knowledge.
 
 ## Tools
 
-You can write generally your .tex file in a simple text editor e.g. Notepad.
+You can write generally your .tex file in a simple text editor.
+
 Useful free/open source tools are listed below:
 
 - Editor
@@ -40,7 +41,7 @@ Useful free/open source tools are listed below:
 - For bibliography
 	- [BibDesk](http://bibdesk.sourceforge.net/) Mac
 	- [JabRef](http://jabref.sourceforge.net/) java based
-	- [citeulike](http://www.citeulike.org/) web based (free)
+	- [citeulike](http://www.citeulike.org/) web based
 
 My favorite tools are MacTeX, texmaker, BibDesk, LaTeXiT.
 
