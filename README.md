@@ -26,8 +26,8 @@ If you use the latest [texlive](https://www.tug.org/texlive/) version? You need 
 - Windows: [MiKTeX](http://miktex.org/)
 - Mac OS X: [MacTeX](https://www.tug.org/mactex/)
 - Linux
-	- Debian, Ubuntu: *apt-get install texlive-full*
-	- RedHat, CentOS: *yum install tetex*
+	- Debian, Ubuntu: ```$ apt-get install texlive-full```
+	- RedHat, CentOS: ```$ yum install tetex```
 
 ## Tools
 
