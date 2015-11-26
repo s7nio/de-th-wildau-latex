@@ -14,6 +14,13 @@ You have an styling request or no idea to integrat things? Do not be frustrated.
 
 Please make a pull request of your improvements and share your knowledge.
 
+## Setup
+
+If you use the latest [texlive](https://www.tug.org/texlive/) version? You need the following packages to compile this latex document.
+
+```$ tlmgr install csquotes acronym moderncv bigfoot xstring harvard blindtext```
+
+
 ## Distributions
 
 - Windows: [MiKTeX](http://miktex.org/)
