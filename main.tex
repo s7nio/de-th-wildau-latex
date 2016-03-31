@@ -22,23 +22,24 @@
 	,pdftitle = {Latex Template}
 	,pdfsubject = {bachelor or master thesis subject}
 	,pdfcreator = {\LaTeX}
-	,pdfkeywords = {Stichwort1, Stichwort2 ...}
+	,pdfkeywords = {key word 1, key word 2, ...}
 	,pdfproducer = {pdfTeX \the\pdftexversion.\pdftexrevision}
-	,breaklinks=true,unicode=false, pdftoolbar=true, pdfmenubar=true, pdffitwindow=false, pdfstartview={FitH},pdfnewwindow=true
+	,unicode=false, breaklinks=true
+	,pdftoolbar=true, pdfmenubar=true, pdffitwindow=false, pdfstartview={FitH},pdfnewwindow=true
 	,colorlinks=true, linkcolor=black, citecolor=black, filecolor=magenta, urlcolor=black
 }
 
 \begin{document}
 
-\import{chapters/}{00-pre} % Erklärung, Danksagung, Kurzfassung, Verzeichnisse
-
+% front matter
+\import{chapters/}{00-pre}
+% content matter
 \import{chapters/}{01-chapter}
 \import{chapters/}{02-chapter}
 \import{chapters/}{03-chapter}
-
+% back matter
 \newpage
 \bibliography{bibliography}
-
 \import{./chapters/}{appendix}
 
 \end{document}
