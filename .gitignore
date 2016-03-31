@@ -1,3 +1,6 @@
+# Texmaker build folder
+.build
+
 # Created by http://www.gitignore.io
 
 #!! ERROR: la is undefined. Use list command to see defined gitignore types !!#

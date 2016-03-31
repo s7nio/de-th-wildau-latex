@@ -1,0 +1,44 @@
+\documentclass[
+	final % final, draft
+	,12pt % default font size
+	,a4paper % classic A4 page, default onesided
+	,BCOR=12mm % binding correction
+	,headings=normal % smarter headings
+	,toc=graduated % table of content (toc) with indent (not '=flat')
+	,bibliography=totoc % toc bibliography
+]{scrreprt} % KOMA-Script report document typ
+
+
+\usepackage{packages-settings}
+
+
+\author{Your Name}
+\title{Latex Template}
+\subtitle{bachelor or master thesis subject}
+\date{\today}
+
+\hypersetup{ % pdf options
+	pdfauthor = {Your Name}
+	,pdftitle = {Latex Template}
+	,pdfsubject = {bachelor or master thesis subject}
+	,pdfcreator = {\LaTeX}
+	,pdfkeywords = {Stichwort1, Stichwort2 ...}
+	,pdfproducer = {pdfTeX \the\pdftexversion.\pdftexrevision}
+	,breaklinks=true,unicode=false, pdftoolbar=true, pdfmenubar=true, pdffitwindow=false, pdfstartview={FitH},pdfnewwindow=true
+	,colorlinks=true, linkcolor=black, citecolor=black, filecolor=magenta, urlcolor=black
+}
+
+\begin{document}
+
+\import{chapters/}{00-pre} % Erklärung, Danksagung, Kurzfassung, Verzeichnisse
+
+\import{chapters/}{01-chapter}
+\import{chapters/}{02-chapter}
+\import{chapters/}{03-chapter}
+
+\newpage
+\bibliography{bibliography}
+
+\import{./chapters/}{appendix}
+
+\end{document}

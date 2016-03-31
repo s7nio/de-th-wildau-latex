@@ -5,9 +5,15 @@ tldr: KOMA script based latex template for bachelor- and master-thesis (TH Wilda
 This repository contains a latex template for bachelor- and master-thesis at Technical University of Applied Sciences Wildau (Technische Hochschule Wildau, TH Wildau). **NOT OFFICIAL.** ... [because it doesn't exist](http://www.th-wildau.de/im-studium/fachbereiche/wir/wir-dokumente.html)
 
 ## Files
-- [thesis.template.tex](thesis.template.tex) main file (to compile)
-- [thesis.content.sample.tex](thesis.content.sample.tex) contains the main content
-- [thesis.template.pdf](https://github.com/der-basti/de.th.wildau.latex/raw/master/thesis.template.pdf) document preview
+- [main.tex](main.tex) main file (to compile)
+- [main.pdf](main.pdf) document preview
+- [packages-settings](packages-settings.sty) self provided package, which include the packages and general settings
+- [texmaker.tks](texmaker.tks) texmaker session file (e.g. define main file) - _update file paths_
+- [chapters/00-prefix.tex](chapters/00-prefix.tex) prefix (abstract, indexes etc.)
+- [chapters/01-chapter.tex](chapters/01-chapter.tex) main content - first chapter
+- [chapters/02-chapter.tex](chapters/02-chapter.tex) main content - second chapter
+- [chapters/03-chapter.tex](chapters/03-chapter.tex) main content - third chapter 
+- [chapters/appendix.tex](chapters/appendix.tex) appendix
 
 ## Issues
 You have an styling request or no idea to integrat things? Do not be frustrated. Use the [issus tracker](https://github.com/der-basti/de.th.wildau.latex/issues) or write me an email.
@@ -51,6 +57,6 @@ Useful free/open source tools are listed below:
 	- [JabRef](http://jabref.sourceforge.net/) java based
 	- [citeulike](http://www.citeulike.org/) web based
 
-My favorite tools are MacTeX, texmaker, BibDesk, LaTeXiT.
+My favorite tool chain are MacTeX (distribution), texmaker (editor), LaTeXiT and BibDesk.
 
 [The Comprehensive TeX Archive Network (CTAN)](https://www.ctan.org/)
